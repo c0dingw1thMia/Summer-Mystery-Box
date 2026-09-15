@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    background-image: url("beachbackground.png");
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    font-family: "Original Surfer", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 2.5rem;
+}
+
+.tagline {
+    color: #df5034;
+}
+
+.hero {
+    padding: 3rem 1rem 1rem;
+    text-align: center;
+}
+
+main {
+    max-width: 32rem;
+    margin: 0 auto;
+    padding: 0 1rem 4rem;
+}
+
+.box-card {
+    background: #58A4A7;
+    border: 2px dotted #C6CCCC;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.box {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 25%, #ffffff, #cfe6ff 65%, #9dc4ef);
+    display: flex;
+    justify-content: center;
+}
+
+.scene {
+    width: 80%;
+}
+
+button {
+    font: inherit;
+    color: #ffffff;
+    background: #709497;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    transition: background 150ms ease, transform 150ms ease;
+}
+
+button:hover {
+    background: #335356;
+    transform: scale(1.05);
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0) rotate(0deg); }
+  20% { transform: translateX(-0.6rem) rotate(-4deg); }
+  40% { transform: translateX(0.6rem) rotate(4deg); }
+  60% { transform: translateX(-0.4rem) rotate(-2deg); }
+  80% { transform: translateX(0.4rem) rotate(2deg); }
+}
+ 
+.box.shaking {
+  animation: shake 600ms ease;
+}
+
+#message {
+    font-style: italic;
+}
