@@ -4,6 +4,8 @@ const message = document.querySelector("#message");
 const backgroundImage = document.getElementById("initial-image");
 const newImage = "openbox.png";
 
+const resetButton = "Shake again!";
+
 const messages = [
   "visit your local farmer's market.",
   "swim in something natural.",
@@ -27,4 +29,10 @@ button.addEventListener("click", () => {
 
     const pick = Math.floor(Math.random() * messages.length);
     message.textContent = messages[pick];
+    
+    if (button.textContent === "Shake the Box!") {
+        button.textContent = resetButton;
+    } else {
+        button.textContent = "Shake the Box!";
+    }
 });
