@@ -5,12 +5,12 @@ const backgroundImage = document.getElementById("initial-image");
 const newImage = "openbox.png";
 
 const messages = [
-"you are someone's favourite person to sit next to.",
-  "the thing you are building counts, even half finished.",
-  "you are allowed to be a beginner for as long as you need.",
-  "someone is going to love what you make with this.",
-  "hot chocolate tastes better after a hard day. you've earned one.",
-  "you ask good questions. that is the whole skill.",
+  "visit your local farmer's market.",
+  "swim in something natural.",
+  "host a dinner party with an oddly specific theme.",
+  "spend a morning exploring your own city like a tourist.",
+  "start a summer journal.",
+  "make a summer playlist that represents your summer mood.",
 ]
 
 button.addEventListener("click", () => {
