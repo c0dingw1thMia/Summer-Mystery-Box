@@ -4,7 +4,7 @@ const message = document.querySelector("#message");
 const backgroundImage = document.getElementById("initial-image");
 const newImage = "openbox.png";
 
-const resetButton = "Shake again!";
+const resetButton = "Close the box.";
 
 const messages = [
   "visit your local farmer's market.",
@@ -19,14 +19,14 @@ button.addEventListener("click", () => {
 
   if (backgroundImage.src == "openbox.png") {
         backgroundImage.src = "closedbox.png";
-
+        
     } else {
         backgroundImage.src = newImage;
     }
 
     box.classList.add("shaking");
     setTimeout(() => box.classList.remove("shaking"), 600);
-
+    
     const pick = Math.floor(Math.random() * messages.length);
     message.textContent = messages[pick];
     
@@ -34,5 +34,7 @@ button.addEventListener("click", () => {
         button.textContent = resetButton;
     } else {
         button.textContent = "Shake the Box!";
+        backgroundImage.src = "closedbox.png";
+        message.textContent = "Your next summer experience awaits, shake again!";
     }
 });
